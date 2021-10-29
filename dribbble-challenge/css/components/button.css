@@ -1,6 +1,7 @@
 .button-action {
-  border-radius: 4px;
-  background-color: purple;
+  border-radius: 9px;
+  background-color: #2160ff;
   color: black;
   text-decoration: none;
+  padding: 10px;
 }

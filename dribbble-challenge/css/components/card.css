@@ -1,0 +1,29 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.card {
+  border: 3px solid green;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card p {
+  font-weight: bold;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+li .fa-check {
+  margin-right: 10px;
+}
