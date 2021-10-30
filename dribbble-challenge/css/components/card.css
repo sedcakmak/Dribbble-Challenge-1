@@ -63,6 +63,8 @@
   .active {
     background-color: #2160FF;
     color: white;
+    box-shadow: 15px 20px 5px 5px #ebeaea;
+    transform: translateY(-15px);
   }
   .active .button-action {
       background-color: white;
