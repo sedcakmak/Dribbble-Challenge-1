@@ -14,7 +14,6 @@
   right: 0;
   bottom: 0;
   padding: 10px;
-  border: 4px solid red;
   display: grid;
   align-items: center;
   justify-content: space-evenly;
@@ -27,16 +26,10 @@
   width: 90vw;
   max-width: 100%;
   min-height: 90%;
-
 }
 
 .card {
   align-items: center;
-  border: 3px solid green;
-  /* grid-template-rows: 50px;
-  display: grid; */
-  /* width: 68%; */
-  /* height: 800px; */
   background-color: #efeded;
   border-radius: 20px;
   padding: 10px;
@@ -47,7 +40,6 @@
   height: 380px;
   /* min-height: 0;
   max-height: 100%; */
-
 }
 
   .active {
@@ -56,6 +48,7 @@
     box-shadow: 15px 20px 5px 5px #ebeaea;
     transform: translateY(-15px);
   }
+
   .active .button-action {
       background-color: white;
       color: black;
@@ -81,11 +74,6 @@ li .fa-check {
   font-weight: light;
 }
 
-/* @media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-} */
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
@@ -111,6 +99,7 @@ li .fa-check {
     height: 94% !important;
     margin: 20px !important;
   }
+
   .container:after {
     width: 81px;
     height: 92px;
@@ -119,27 +108,73 @@ li .fa-check {
 }
 
 @media (orientation: landscape) and (max-width: 670px) {
+  .container {
+    height: 96% !important;
+  }
+
   .container:after {
     width: 141px !important;
     height: 158px !important;
     left: -93px !important;
     top: -123px !important;
   }
+
   .cards {
-    top: 30px;
+    top: 60px;
   }
+
   .button-action {
     padding: 15px 10px !important;
+  }
+
+  .box {
+    height: 150% !important;
+  }
+
+  .card {
+    height: 450px;
+  }
+
+  .active {
+    box-shadow: 16px 17px 5px 0px #ebeaea;
+  }
+}
+@media (min-width: 574px) and (max-width: 780px) {
+  .container {
+    height: 88%;
+    margin: 30px !important;
+  }
+
+  .container:after {
+    left: -128px !important;
+    top: -140px !important;
+    width: 165px !important;
+  }
+
+  .card {
+    height: 420px;
+  }
+
+  .button-action {
+    padding: 10px 3px !important;
+  }
+  .card ul {
+    margin-bottom: 16px;
+}
+  .active {
+    box-shadow: 16px 17px 5px -2px #ebeaea;
   }
 }
 
 @media (min-width: 768px) {
   .card {
-    height: 430px;
+    height: 420px;
   }
+
   .button-action {
     padding: 15px 22px !important;
   }
+
   .active {
     box-shadow: 16px 20px 5px 2px #ebeaea;
   }
@@ -149,40 +184,16 @@ li .fa-check {
   .cards {
     top: 64px;
   }
+
   .card {
     height: 374px;
   }
+
   .button-action {
     padding: 15px 22px !important;
   }
+
   .active {
     box-shadow: 14px 20px 5px 2px #ebeaea;
   }
 }
-
-/* @media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-} */
